@@ -1,9 +1,9 @@
-/***** Top Nav var *****/
+/***** Top Nav Bar *****/
 .tab-bar-section.left {
     text-align: left;
 }
 .tab-bar-section {
-    background: url('images/bs-icon.png') no-repeat 8px 8px transparent;
+    background: url('/images/bs-icon.png') no-repeat 8px 8px transparent;
     background-size: 28px;
     padding: 7px 0px 0px 50px;
 }
@@ -13,36 +13,65 @@
     font-weight: 200;
 }
 
+/***** Nav Canvas *****/
+.right-off-canvas-menu {
+    background: rgb(230, 230, 230);
+}
+ul.off-canvas-list li a {
+    color: rgba(0, 0, 0, 0.65);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .6);
+}
+.move-left .exit-off-canvas {
+    box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
+}
+
 /***** Main Message Image *****/
 #header div {
     background-color: rgba(0, 0, 0, .25);
-    min-height: 150px;
+    min-height: 135px;
 }
 
 /***** Service Thumbnails *****/
-#services div {
-    min-height: 100px;
-    padding: 8px;
+#services .small-6 {
+    min-height: 75px;
+    padding: 17px 31px 5px;
+    font-size: .9em;
+    line-height: 1.3em;
+    font-weight: 800;
+    text-align: center;
+    background-color: rgb(225, 225, 225);
 }
-#services div:nth-child(even) {
-    background-color: rgba(0, 0, 0, .1);
-}
-#services div:nth-child(odd) {
-    background-color: rgba(0, 0, 0, .15);
+#services .small-6.gray {
+    background: rgb(210, 210, 210);
 }
 
 /***** Proudly Serving... *****/
 #territory {
     padding: 10px;
+    background: rgba(0, 0, 0, .05);
+}
+#territory span {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 800;
+    font-style: italic;
+}
+#territory h3 {
+    text-align: center;
+    line-height: 1.3em;
 }
 
 /***** CTA Buttons *****/
 #callBtn {
-    background-color: darkslateblue;
+    background-color: rgb(150, 150, 150);
     font-size: 1.7em;
 }
 #formBtn {
-    background-color: slateblue;
+    background-color: rgb(100, 100, 100);
     font-size: 1.2em;
 }
 #callBtn, #formBtn {
@@ -55,8 +84,7 @@ a#phoneLink, a#formLink {
     color: #fff;
 }
 #callBtn .small-9, #formBtn .small-9 {
-    text-align: left;
-    padding-left: 12px;
+    text-align: center;
     display: table;
     min-height: 60px;
 }
@@ -72,8 +100,8 @@ a#phoneLink, a#formLink {
     min-height: 60px;
 }
 #callBtn .small-3 {
-    background: url('images/phone-icon.png') no-repeat center;
+    background: url('/images/phone-icon.png') no-repeat center;
 }
 #formBtn .small-3 {
-    background: url('images/form-icon.png') no-repeat center;
+    background: url('/images/form-icon.png') no-repeat center;
 }
