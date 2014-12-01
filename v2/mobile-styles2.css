@@ -1,0 +1,79 @@
+/***** Top Nav var *****/
+.tab-bar-section.left {
+    text-align: left;
+}
+.tab-bar-section {
+    background: url('images/bs-icon.png') no-repeat 8px 8px transparent;
+    background-size: 28px;
+    padding: 7px 0px 0px 50px;
+}
+.tab-bar-section h1 {
+    font-size: .8em;
+    line-height: 1.4em;
+    font-weight: 200;
+}
+
+/***** Main Message Image *****/
+#header div {
+    background-color: rgba(0, 0, 0, .25);
+    min-height: 150px;
+}
+
+/***** Service Thumbnails *****/
+#services div {
+    min-height: 100px;
+    padding: 8px;
+}
+#services div:nth-child(even) {
+    background-color: rgba(0, 0, 0, .1);
+}
+#services div:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+/***** Proudly Serving... *****/
+#territory {
+    padding: 10px;
+}
+
+/***** CTA Buttons *****/
+#callBtn {
+    background-color: darkslateblue;
+    font-size: 1.7em;
+}
+#formBtn {
+    background-color: slateblue;
+    font-size: 1.2em;
+}
+#callBtn, #formBtn {
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+a#phoneLink, a#formLink {
+    color: #fff;
+}
+#callBtn .small-9, #formBtn .small-9 {
+    text-align: left;
+    padding-left: 12px;
+    display: table;
+    min-height: 60px;
+}
+#callBtn .small-9 span, #formBtn .small-9 span {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+}
+#callBtn .small-3, #formBtn .small-3 {
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, .25)inset;
+    padding: 8px;
+    text-align: center;
+    min-height: 60px;
+}
+#callBtn .small-3 {
+    background: url('images/phone-icon.png') no-repeat center;
+}
+#formBtn .small-3 {
+    background: url('images/form-icon.png') no-repeat center;
+}
