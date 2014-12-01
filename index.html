@@ -7,60 +7,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
     <style>
-    body {
-      text-align: center;
-    }
     #header div {
-      background-color: rgba(0,0,0,.25);
-      min-height: 100px;
+    background-color: rgba(0,0,0,.25);
+    min-height: 100px;
     }
     #services div {
-      min-height: 50px;
+    min-height: 50px;
+    padding: 10px;
     }
     #services div:nth-child(even) {
-      background-color: rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.1);
     }
     #services div:nth-child(odd) {
-      background-color: rgba(0,0,0,.15);
+    background-color: rgba(0,0,0,.15);
+    }
+    #territory {
+    padding: 10px;
+    }
+    #callBtn div, #formBtn div {
+    padding: 10px;
+    color: #fff;
     }
     #callBtn .small-9, #formBtn .small-9 {
-      text-align: left;
+    text-align: left;
+    }
+    #callBtn {
+    background-color: darkslateblue;
+    }
+    #formBtn {
+    background-color: slateblue;
     }
     </style>
   </head>
   <body>
-    
-    <div class="row" id="header">
-      <div class="column">LOGO / BRANDING</div>
-    </div>
-
-    <div class="row" id="services">
-      <div class="small-3 column">Service 1</div>
-      <div class="small-3 column">Service 2</div>
-      <div class="small-3 column">Service 3</div>
-      <div class="small-3 column">Service 4</div>
-    </div>
-    
-    <div class="row" id="territory">
-      <div class="column">
-        <h3>Proudly Serving All of Connecticut and Westchester County</h3>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <div class="tab-bar">
+          <div class="right-small">
+            <a role="button" href="#" class="right-off-canvas-toggle menu-icon"><span></span></a>
+          </div>
+          <div class="left tab-bar-section"><h1>Connecticut Basement Systems</h1></div>
+        </div>
+        <div class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Our Services</label></li>
+            <li><a href="#">Basement Waterproofing</a></li>
+            <li><a href="#">Crawl Space Repair</a></li>
+            <li><a href="#">Foundation Repair</a></li>
+            <li><a href="#">Basement Finishing</a></li>
+            <li><label>About Us</label></li>
+            <li><a href="#">Company Profile</a></li>
+            <li><a href="#">Customer Reviews</a></li>
+            <li><a href="#">Service Area</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="row" id="header">
+          <div class="column">LOGO / BRANDING</div>
+        </div>
+        <div class="row" id="services">
+          <div class="small-3 column">Service 1</div>
+          <div class="small-3 column">Service 2</div>
+          <div class="small-3 column">Service 3</div>
+          <div class="small-3 column">Service 4</div>
+        </div>
+        
+        <div class="row" id="territory">
+          <div class="column">
+            <h3>Proudly Serving All of Connecticut and Westchester County</h3>
+          </div>
+        </div>
+        
+        <div class="row" id="callBtn">
+          <div class="small-3 column">&#9742;</div>
+          <div class="small-9 column">1-800-555-5555</div>
+        </div>
+        <div class="row" id="formBtn">
+          <div class="small-3 column">&#9745;</div>
+          <div class="small-9 column">Submit a request online</div>
+        </div>
+        <a class="exit-off-canvas"></a>
       </div>
     </div>
-
-    <div class="row" id="callBtn">
-      <div class="small-3 column">&#9742;</div>
-      <div class="small-9 column">1-800-555-5555</div>
-    </div>
-
-    <div class="row" id="formBtn">
-      <div class="small-3 column">&#9745;</div>
-      <div class="small-9 column">Submit a request online</div>
-    </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+    $(document).foundation();
     </script>
   </body>
 </html>
