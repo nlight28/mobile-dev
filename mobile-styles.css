@@ -61,6 +61,7 @@ ul.off-canvas-list li label {
     line-height: 1.3em;
     font-weight: 800;
     text-align: center;
+    color: #fff;
 }
 #services div:nth-child(even) {
     background-color: rgba(0, 0, 0, .15);
