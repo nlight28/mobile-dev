@@ -47,33 +47,52 @@ ul.off-canvas-list li label {
 #header div {
     background-color: rgba(0, 0, 0, .25);
     min-height: 120px;
+    background: url('../images/atb-bg.jpg') no-repeat 0 0;
+    background-size: cover;
+    border-top: 1px solid #fff;
 }
 
 /***** Service Thumbnails *****/
 #services {
     background-color: rgb(225, 225, 225);
+    border: 1px solid #fff;
+    border-width: 1px 0px 0px 1px;
 }
 #services .small-6 {
     padding: 0px;
+    border: 1px solid #fff;
+    border-width: 0px 1px 1px 0px;
+    background-size: cover;
+}
+.small-6.bw {
+    background: url('../images/waterproof-bg.jpg') no-repeat 0 -40px;
+}
+.small-6.cs {
+    background: url('../images/crawl-bg.jpg') no-repeat 0 0;
+}
+.small-6.fsi {
+    background: url('../images/foundation-bg.jpg') no-repeat 0 0;
+}
+.small-6.tbf {
+    background: url('../images/finishing-bg.jpg') no-repeat 0 0;
 }
 #services .small-6 a {
     display: block;
     min-height: 75px;
     padding: 17px 31px 5px;
-    font-size: .9em;
+    font-size: 1em;
     line-height: 1.3em;
-    font-weight: 800;
+    font-weight: 200;
     text-align: center;
-    color: #4c4c4c;
-}
-#services .small-6.gray {
-    background: rgb(210, 210, 210);
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
 }
 
 /***** Proudly Serving... *****/
 #territory {
-    padding: 10px 10px 8px;
-    background: rgba(0, 0, 0, .05);
+    padding: 10px 0px 8px;
+    background: rgb(50, 100, 170);
 }
 #territory span {
     display: block;
@@ -86,32 +105,62 @@ ul.off-canvas-list li label {
 }
 #territory h3 {
     text-align: center;
-    line-height: 1.1em;
-    font-size: 1em;
+    line-height: 1.3em;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+    font-weight: 200;
 }
 
-/***** CTA Buttons *****/
+/***** CTA Buttons - HOME *****/
+#buttons {
+    padding-bottom: 10px;
+    background: rgb(50, 50, 50);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
+}
+#buttons p {
+    font-size: .9em;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 10px auto 0px;
+}
 #callBtn {
-    background-color: rgb(150, 150, 150);
     font-size: 1.7em;
 }
 #formBtn {
-    background-color: rgb(100, 100, 100);
     font-size: 1.2em;
 }
 #callBtn, #formBtn {
     color: #fff;
-    border-top: 1px solid rgba(255, 255, 255, .3);
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
     overflow: hidden;
+    padding: 10px 10px 0px;
 }
 a#phoneLink, a#formLink {
     color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    display: block;
+    overflow: auto;
+}
+a#phoneLink {
+    background-color: rgb(0, 130, 70);
+}
+a#formLink {
+    background-color: rgb(215, 45, 35);
+}
+#callBtn .small-9 span {
+    background-color: rgb(0, 150, 90);
+}
+#formBtn .small-9 span {
+    background-color: rgb(235, 65, 55);
 }
 #callBtn .small-9, #formBtn .small-9 {
     text-align: center;
     display: table;
-    min-height: 60px;
+    min-height: 50px;
+    padding: 0px;
 }
 #callBtn .small-9 span, #formBtn .small-9 span {
     display: table-cell;
@@ -122,17 +171,13 @@ a#phoneLink, a#formLink {
     box-shadow: -5px 0px 10px rgba(0, 0, 0, .25)inset;
     padding: 8px;
     text-align: center;
-    min-height: 60px;
+    min-height: 50px;
 }
 #callBtn .small-3 {
     background: url('../images/call-icon.svg') no-repeat center;
-    background-size: 35px;
+    background-size: 30px;
 }
 #formBtn .small-3 {
     background: url('../images/form-icon.svg') no-repeat center;
-    background-size: 40px;
-}
-/**** Photo Slideshow ****/
-.clearing-caption {
-    padding-bottom: 30px;
+    background-size: 35px;
 }
