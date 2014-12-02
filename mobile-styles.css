@@ -1,14 +1,16 @@
 /***** Top Nav Bar *****/
 .tab-bar {
-    background: rgb(50,100,170);
+    background: rgb(50, 100, 170);
 }
 .tab-bar-section.left {
     text-align: left;
 }
-.tab-bar-section {
+.tab-bar-section a {
     background: url('images/bs-icon.png') no-repeat 8px 8px transparent;
     background-size: 28px;
     padding: 7px 0px 0px 50px;
+    display: block;
+    color: #fff;
 }
 .tab-bar-section {
     font-size: .8em;
@@ -16,8 +18,9 @@
     font-weight: 200;
 }
 .right-small {
-    border-left: solid 1px rgb(0,60,120);
+    border-left: solid 1px rgb(0, 60, 120);
 }
+
 /***** Nav Canvas *****/
 .right-off-canvas-menu {
     background: rgb(230, 230, 230);
@@ -30,11 +33,10 @@ ul.off-canvas-list li a {
 .move-left .exit-off-canvas {
     box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
 }
-
 ul.off-canvas-list li label {
-    background: rgb(150,150,150);
+    background: rgb(150, 150, 150);
     color: #fff;
-    border-top: solid 1px rgb(120,120,120);
+    border-top: solid 1px rgb(120, 120, 120);
 }
 
 /***** Main Message Image *****/

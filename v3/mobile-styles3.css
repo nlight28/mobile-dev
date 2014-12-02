@@ -1,16 +1,24 @@
 /***** Top Nav Bar *****/
+.tab-bar {
+    background: rgb(50, 100, 170);
+}
 .tab-bar-section.left {
     text-align: left;
 }
-.tab-bar-section {
+.tab-bar-section a {
     background: url('../images/bs-icon.png') no-repeat 8px 8px transparent;
     background-size: 28px;
     padding: 7px 0px 0px 50px;
+    display: block;
+    color: #fff;
 }
-.tab-bar-section h1 {
+.tab-bar-section {
     font-size: .8em;
     line-height: 1.4em;
     font-weight: 200;
+}
+.right-small {
+    border-left: solid 1px rgb(0, 60, 120);
 }
 
 /***** Nav Canvas *****/
@@ -25,11 +33,10 @@ ul.off-canvas-list li a {
 .move-left .exit-off-canvas {
     box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
 }
-
-/***** Main Message Image *****/
-#header div {
-    background-color: rgba(0, 0, 0, .25);
-    min-height: 120px;
+ul.off-canvas-list li label {
+    background: rgb(150, 150, 150);
+    color: #fff;
+    border-top: solid 1px rgb(120, 120, 120);
 }
 
 /***** Service Thumbnails *****/
