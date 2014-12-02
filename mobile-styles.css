@@ -50,7 +50,11 @@ ul.off-canvas-list li label {
 }
 
 /***** Service Thumbnails *****/
-#services div {
+#services .small-3.column {
+    padding: 0px;
+}
+#services div a {
+    display: block;
     min-height: 100px;
     padding: 65px 5px 5px;
     font-size: .6em;
@@ -67,7 +71,7 @@ ul.off-canvas-list li label {
 
 /***** Proudly Serving... *****/
 #territory {
-    padding: 10px;
+    padding: 10px 10px 8px;
     background: rgba(0, 0, 0, .05);
 }
 #territory span {
@@ -81,7 +85,8 @@ ul.off-canvas-list li label {
 }
 #territory h3 {
     text-align: center;
-    line-height: 1.3em;
+    line-height: 1.1em;
+    font-size: 1em;
 }
 
 /***** CTA Buttons - HOME *****/
