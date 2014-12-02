@@ -171,3 +171,24 @@ a#formLink {
 .clearing-caption {
     padding-bottom: 30px;
 }
+
+/**** Contact Form ****/
+div#contactForm {
+    background: #eee;
+    padding-top: 10px;
+}
+p.contactText {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+label small {
+    text-transform: capitalize;
+    color: rgb(180, 60, 60);
+    float: right;
+}
+#contactForm button {
+background-color: rgb(180,60,60);
+margin-top: 10px;
+}
