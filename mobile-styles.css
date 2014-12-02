@@ -132,11 +132,11 @@ a#formLink {
 }
 #callBtn .small-3 {
     background: url('images/call-icon.svg') no-repeat center;
-    background-size: 40px;
+    background-size: 35px;
 }
 #formBtn .small-3 {
     background: url('images/form-icon.svg') no-repeat center;
-    background-size: 45px;
+    background-size: 40px;
 }
 
 /**** CTA Buttons -Interior page override ****/
