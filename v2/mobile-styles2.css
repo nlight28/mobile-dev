@@ -3,7 +3,7 @@
     text-align: left;
 }
 .tab-bar-section {
-    background: url('/images/bs-icon.png') no-repeat 8px 8px transparent;
+    background: url('../images/bs-icon.png') no-repeat 8px 8px transparent;
     background-size: 28px;
     padding: 7px 0px 0px 50px;
 }
@@ -100,8 +100,8 @@ a#phoneLink, a#formLink {
     min-height: 60px;
 }
 #callBtn .small-3 {
-    background: url('/images/phone-icon.png') no-repeat center;
+    background: url('../images/phone-icon.png') no-repeat center;
 }
 #formBtn .small-3 {
-    background: url('/images/form-icon.png') no-repeat center;
+    background: url('../images/form-icon.png') no-repeat center;
 }
