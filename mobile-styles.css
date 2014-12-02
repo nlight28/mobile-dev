@@ -25,6 +25,7 @@ ul.off-canvas-list li a {
 .move-left .exit-off-canvas {
     box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
 }
+
 /***** Main Message Image *****/
 #header div {
     background-color: rgba(0, 0, 0, .25);
@@ -66,7 +67,7 @@ ul.off-canvas-list li a {
     line-height: 1.3em;
 }
 
-/***** CTA Buttons *****/
+/***** CTA Buttons - HOME *****/
 #callBtn {
     background-color: rgb(150, 150, 150);
     font-size: 1.7em;
@@ -83,6 +84,8 @@ ul.off-canvas-list li a {
 }
 a#phoneLink, a#formLink {
     color: #fff;
+    display: block;
+    overflow: auto;
 }
 #callBtn .small-9, #formBtn .small-9 {
     text-align: center;
@@ -105,4 +108,17 @@ a#phoneLink, a#formLink {
 }
 #formBtn .small-3 {
     background: url('images/form-icon.png') no-repeat center;
+}
+
+/**** CTA Buttons -Interior page override ****/
+#callBtn.top, #formBtn.top {
+    font-size: .8em;
+}
+#callBtn.top .small-9, #formBtn.top .small-9 {
+    display: table;
+    min-height: 40px;
+    padding: 0px;
+}
+#callBtn.top .small-3, #formBtn.top .small-3 {
+    min-height: 40px;
 }
