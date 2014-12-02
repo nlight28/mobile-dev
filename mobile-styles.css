@@ -6,9 +6,9 @@
     text-align: left;
 }
 .tab-bar-section a {
-    background: url('images/bs-icon.png') no-repeat 8px 8px transparent;
+    background: url('../images/bs-icon.png') no-repeat 0px 8px transparent;
     background-size: 28px;
-    padding: 7px 0px 0px 50px;
+    padding: 7px 0px 0px 40px;
     display: block;
     color: #fff;
 }
