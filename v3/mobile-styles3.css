@@ -30,13 +30,17 @@ ul.off-canvas-list li a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top: 1px solid rgba(255, 255, 255, .6);
 }
-.move-left .exit-off-canvas {
-    box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
+ul.off-canvas-list li a:hover {
+    color: #fff;
+    background: rgb(50, 100, 170);
 }
 ul.off-canvas-list li label {
     background: rgb(150, 150, 150);
     color: #fff;
     border-top: solid 1px rgb(120, 120, 120);
+}
+.move-left .exit-off-canvas {
+    box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
 }
 
 /***** Service Thumbnails *****/
