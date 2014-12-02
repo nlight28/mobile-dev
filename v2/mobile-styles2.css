@@ -125,10 +125,12 @@ a#phoneLink, a#formLink {
     min-height: 60px;
 }
 #callBtn .small-3 {
-    background: url('../images/phone-icon.png') no-repeat center;
+    background: url('../images/call-icon.svg') no-repeat center;
+    background-size: 40px;
 }
 #formBtn .small-3 {
-    background: url('../images/form-icon.png') no-repeat center;
+    background: url('../images/form-icon.svg') no-repeat center;
+    background-size: 45px;
 }
 /**** Photo Slideshow ****/
 .clearing-caption {
