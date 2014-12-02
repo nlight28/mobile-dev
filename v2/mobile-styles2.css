@@ -130,3 +130,7 @@ a#phoneLink, a#formLink {
 #formBtn .small-3 {
     background: url('../images/form-icon.png') no-repeat center;
 }
+/**** Photo Slideshow ****/
+.clearing-caption {
+    padding-bottom: 30px;
+}

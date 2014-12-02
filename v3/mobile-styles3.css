@@ -133,3 +133,7 @@ a#phoneLink, a#formLink {
     background: url('images/form-icon.svg') no-repeat center;
     background-size: 45px;
 }
+/**** Photo Slideshow ****/
+.clearing-caption {
+    padding-bottom: 30px;
+}
