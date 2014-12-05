@@ -187,7 +187,7 @@ a#formLink {
 
 /**** CTA Buttons -Interior page override ****/
 #topBtns {
-    padding: 8px 5px 10px;
+    padding: 10px 5px;
     background: rgb(50, 50, 50);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
 }
@@ -208,6 +208,32 @@ a#formLink {
 }
 #topBtns .small-3 {
     min-height: 40px;
+}
+/**** Content Styles ****/
+#contentWrap h1 {
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+div#contentWrap {
+    padding-top: 10px;
+}
+
+#contentWrap p {
+    line-height: 1.4em;
+}
+
+#contentWrap h2 {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+
+#contentWrap h3 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: 300;
 }
 
 /**** Photo Slideshow ****/
