@@ -220,20 +220,21 @@ div#contentWrap {
     padding-top: 10px;
 }
 
-#contentWrap p {
-    line-height: 1.4em;
+#contentWrap p, #contentWrap ul {
+line-height: 1.4em;
+font-weight: 300;
 }
 
 #contentWrap h2 {
     font-size: 1.4em;
     line-height: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #contentWrap h3 {
     font-size: 1.2em;
     line-height: 1.3em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /**** Photo Slideshow ****/
