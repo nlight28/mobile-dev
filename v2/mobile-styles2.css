@@ -159,7 +159,7 @@ a#formLink {
 #callBtn .small-9, #formBtn .small-9 {
     text-align: center;
     display: table;
-    min-height: 50px;
+    height: 50px;
     padding: 0px;
 }
 #callBtn .small-9 span, #formBtn .small-9 span {
@@ -171,7 +171,7 @@ a#formLink {
     box-shadow: -5px 0px 10px rgba(0, 0, 0, .25)inset;
     padding: 8px;
     text-align: center;
-    min-height: 50px;
+    height: 50px;
 }
 #callBtn .small-3 {
     background: url('../images/call-icon.svg') no-repeat center;
