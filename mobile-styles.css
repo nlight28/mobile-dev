@@ -209,28 +209,25 @@ a#formLink {
 #topBtns .small-3 {
     height: 40px;
 }
+
 /**** Content Styles ****/
 #contentWrap h1 {
     font-size: 1.6em;
     font-weight: 500;
     line-height: 1.2em;
 }
-
 div#contentWrap {
     padding-top: 10px;
 }
-
 #contentWrap p, #contentWrap ul {
-line-height: 1.4em;
-font-weight: 300;
+    line-height: 1.4em;
+    font-weight: 300;
 }
-
 #contentWrap h2 {
     font-size: 1.4em;
     line-height: 1.2em;
     font-weight: 400;
 }
-
 #contentWrap h3 {
     font-size: 1.2em;
     line-height: 1.3em;
@@ -264,4 +261,11 @@ label small {
 #contactForm button {
     background-color: rgb(180, 60, 60);
     margin-top: 10px;
+}
+
+/**** About Us Page Styles ****/
+img#ownerPhoto {
+    float: right;
+    margin: 0px 0px 15px 15px;
+    max-width: 100px;
 }
