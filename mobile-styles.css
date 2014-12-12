@@ -241,6 +241,10 @@ div#contentWrap {
 .clearing-caption {
     padding-bottom: 30px;
 }
+/**** Orbit Container ****/
+.orbit-container {
+    margin-bottom: 20px;
+}
 
 /**** Contact Form ****/
 div#contactForm {
