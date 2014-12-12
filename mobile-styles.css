@@ -243,7 +243,7 @@ div#contentWrap {
 }
 /**** Orbit Container ****/
 .orbit-container {
-    margin-bottom: 20px;
+    margin: 10px auto 20px;
 }
 
 /**** Contact Form ****/
