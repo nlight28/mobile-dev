@@ -1,6 +1,7 @@
 /***** Top Nav Bar *****/
 .tab-bar {
-    background: rgb(50, 100, 170);
+    background: rgb(50, 95, 170);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
 }
 .tab-bar-section.left {
     text-align: left;
@@ -23,21 +24,22 @@
 
 /***** Nav Canvas *****/
 .right-off-canvas-menu {
-    background: rgb(230, 230, 230);
+    background: rgb(220, 220, 220);
 }
 ul.off-canvas-list li a {
-    color: rgba(0, 0, 0, 0.65);
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    border-top: 1px solid rgba(255, 255, 255, .6);
+    color: rgb(60,60,60);
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    border-top: 1px solid rgba(255, 255, 255, .3);
 }
 ul.off-canvas-list li a:hover {
     color: #fff;
     background: rgb(50, 100, 170);
 }
 ul.off-canvas-list li label {
-    background: rgb(150, 150, 150);
+    background: rgb(50, 95, 170);
     color: #fff;
     border-top: solid 1px rgb(120, 120, 120);
+    text-shadow: 0px 1px 0px rgba(0,0,0,.3);
 }
 .move-left .exit-off-canvas {
     box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
@@ -45,57 +47,39 @@ ul.off-canvas-list li label {
 
 /***** Main Message Image *****/
 #header div {
-    background-color: rgba(0, 0, 0, .25);
-    min-height: 150px;
-    background: url('images/atb-bg.jpg') no-repeat 0 0;
-    background-size: cover;
-    border-top: 1px solid #fff;
+    padding: 20px;
 }
 
 /***** Service Thumbnails *****/
 #services {
-    border: 1px solid #fff;
-    border-width: 1px 0px 1px 1px;
+    padding-bottom: 15px;
 }
-#services .small-3.column {
-    padding: 0px;
-    border-right: 1px solid #fff;
-    background-size: cover;
+#services .row {
+    background-color: rgb(45, 85, 165);
+    border-bottom: 3px solid rgba(0, 35, 95, .9);
+    margin-bottom: 3px;
 }
-.small-3.column.bw {
-    background: url('images/waterproof-bg.jpg') no-repeat 0 0;
-}
-.small-3.column.cs {
-    background: url('images/crawl-bg.jpg') no-repeat 0 0;
-}
-.small-3.column.fsi {
-    background: url('images/foundation-bg.jpg') no-repeat 0 0;
-}
-.small-3.column.tbf {
-    background: url('images/finishing-bg.jpg') no-repeat 0 0;
-}
-#services div a {
+#services .small-11 a {
     display: block;
-    min-height: 100px;
-    padding: 70px 5px 5px;
-    font-size: .6em;
-    line-height: 1.3em;
-    font-weight: 800;
+    min-height: 50px;
+    padding: 17px 8px;
+    font-size: 1.1em;
+    line-height: 1em;
+    font-weight: 300;
     text-align: center;
     color: #fff;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.2)));
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000', GradientType=0 );
+    text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+}
+#services .small-11 .small-10 {
+    text-align: left;
+    padding-left: 20px;
 }
 
 /***** Proudly Serving... *****/
 #territory {
     padding: 10px 0px 8px;
-    background: rgb(50, 100, 170);
+    background: #efefef;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 #territory span {
     display: block;
@@ -105,20 +89,21 @@ ul.off-canvas-list li label {
     font-size: .7em;
     font-weight: 800;
     font-style: italic;
+    color: rgb(25, 65, 125);
 }
 #territory h3 {
     text-align: center;
     line-height: 1.3em;
     font-size: 1.1em;
-    color: #fff;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+    color: #4c4c4c;
+    text-shadow: 0px 1px 0px rgba(255,255,255, .75);
     font-weight: 200;
 }
 
 /***** CTA Buttons - HOME *****/
 #buttons {
     padding-bottom: 10px;
-    background: rgb(50, 50, 50);
+    background: rgb(50, 50, 65);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
 }
 #buttons p {
@@ -129,16 +114,14 @@ ul.off-canvas-list li label {
     text-align: center;
     margin: 10px auto 0px;
 }
-#callBtn {
-    font-size: 1.7em;
-}
-#formBtn {
-    font-size: 1.2em;
+#callBtn, #formBtn {
+    font-size: 1.0em;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 #callBtn, #formBtn {
     color: #fff;
     overflow: hidden;
-    padding: 10px 10px 0px;
 }
 a#phoneLink, a#formLink {
     color: #fff;
@@ -146,18 +129,19 @@ a#phoneLink, a#formLink {
     border-bottom: 1px solid rgba(0, 0, 0, .3);
     display: block;
     overflow: auto;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.8);
 }
 a#phoneLink {
-    background-color: rgb(0, 130, 70);
+    background-color: rgb(215, 45, 35);   
 }
 a#formLink {
-    background-color: rgb(215, 45, 35);
+    background-color: rgb(0, 130, 70);
 }
 #callBtn .small-9 span {
-    background-color: rgb(0, 150, 90);
+    background-color: rgb(235, 65, 55);
 }
 #formBtn .small-9 span {
-    background-color: rgb(235, 65, 55);
+    background-color: rgb(0, 150, 90);
 }
 #callBtn .small-9, #formBtn .small-9 {
     text-align: center;
@@ -177,18 +161,18 @@ a#formLink {
     height: 50px;
 }
 #callBtn .small-3 {
-    background: url('images/call-icon.svg') no-repeat center;
+    background: url('../images/call-icon.svg') no-repeat center;
     background-size: 30px;
 }
 #formBtn .small-3 {
-    background: url('images/form-icon.svg') no-repeat center;
+    background: url('../images/form-icon.svg') no-repeat center;
     background-size: 35px;
 }
 
 /**** CTA Buttons -Interior page override ****/
 #topBtns {
     padding: 10px 5px;
-    background: rgb(50, 50, 50);
+    background: rgb(50, 50, 65);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
 }
 #topBtns #callBtn .small-3 {
