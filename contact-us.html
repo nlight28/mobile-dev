@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="mobile-styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
   </head>
+    <body>
   <?php
 require_once '/home/config/core/mobile/inc/top-border.php';
 /* KEEP TRACK OF MOBILE CONTACT PAGE VS. FULL SITE CONTACT PAGE */
@@ -40,7 +41,7 @@ else
 }
 
 ?>
-  <body>
+
     <!-- NAVIGATION BAR-->
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
@@ -63,10 +64,6 @@ else
             <li><label>About Us</label></li>
             <li><a href="about-us.html">Company Profile</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
-            <li><label>Versions</label></li>
-            <li><a href="index.html">Home Layout 1</a></li>
-            <li><a href="v2/index2.html">Home Layout 2</a></li>
-            <li><a href="v3/index3.html">Home Layout 3</a></li>
           </ul>
         </div>
         <!-- Contact Form-->
@@ -127,3 +124,5 @@ else
 		</div>
 	</div>
 <?php require_once '/home/config/core/mobile/inc/bottom-border.php'; ?>
+</body>
+</html>
