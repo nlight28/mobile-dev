@@ -1,0 +1,59 @@
+<?php require_once '/home/config/core/mobile/inc/top-border.php'; ?>
+	<div class="container content">
+		<div class="row">
+			<div class="span12">
+				
+				<?php
+				/* Special Field for Aquaguard Never do this again -JS*/
+				if(isset($_POST) and !empty($_POST))
+				{
+					if(isset($_POST['Mobile_Custom_Message']) and $_POST['Mobile_Custom_Message'])
+					{
+						if($siteData['site.id'] == 128) 
+						{
+							$_POST['Mobile_Custom_Message'] = "How did you hear about us?\r\n".$_POST['Mobile_Custom_Message'];
+						}
+						@$_POST['Message'] .= "\r\n\r\n".$_POST['Mobile_Custom_Message'];
+					}
+					/* End Special Field -JS*/
+					require('/home/config/portal/process_leads.php');
+
+					if(@$processLeadsError)
+					{
+						?>
+						<div class="contact_confirmation module">
+							<h1>There was an error!</h1>
+							<p><?php echo($processLeadsError); ?></p>
+						</div>
+						<?php
+					}
+					else
+					{
+						if($test == 2)
+						{
+						?>
+						<p>Merci d'avoir contact&#233; [company], nous donnons suite &#224; votre message dans les plus brefs d&#233;lais.</p>
+						<?php
+						}
+						else
+						{
+						?>
+						<h1>Thank you for contacting us!</h1>
+						<p>Thank you for contacting us. We have received your information, and one of our specialists will contact you soon.</p>
+						<?php
+						}
+					}
+				}
+				else
+				{
+					?>
+					<h1>Form Processing Error!</h1>
+					<p>It seems like the form wasn't processed correctly. Please try again!</a></p>
+					<?php
+				}
+				?>
+				
+			</div>
+		</div>
+	</div>
+<?php require_once '/home/config/core/mobile/inc/bottom-border.php'; ?>
