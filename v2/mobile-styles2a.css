@@ -1,0 +1,183 @@
+/***** Top Nav Bar *****/
+.tab-bar {
+    background: rgb(50, 100, 170);
+}
+.tab-bar-section.left {
+    text-align: left;
+}
+.tab-bar-section a {
+    background: url('../images/bs-icon.png') no-repeat 0px 8px transparent;
+    background-size: 28px;
+    padding: 7px 0px 0px 40px;
+    display: block;
+    color: #fff;
+}
+.tab-bar-section {
+    font-size: .8em;
+    line-height: 1.4em;
+    font-weight: 200;
+}
+.right-small {
+    border-left: solid 1px rgb(0, 60, 120);
+}
+
+/***** Nav Canvas *****/
+.right-off-canvas-menu {
+    background: rgb(230, 230, 230);
+}
+ul.off-canvas-list li a {
+    color: rgba(0, 0, 0, 0.65);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .6);
+}
+ul.off-canvas-list li a:hover {
+    color: #fff;
+    background: rgb(50, 100, 170);
+}
+ul.off-canvas-list li label {
+    background: rgb(150, 150, 150);
+    color: #fff;
+    border-top: solid 1px rgb(120, 120, 120);
+}
+.move-left .exit-off-canvas {
+    box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
+}
+
+/***** Main Message Image *****/
+#header div {
+    background-color: rgba(0, 0, 0, .25);
+    min-height: 120px;
+    background: url('../images/atb-bg.jpg') no-repeat 0 0;
+    background-size: cover;
+    border-top: 1px solid #fff;
+}
+
+/***** Service Thumbnails *****/
+#services {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid #fff;
+    border-width: 1px 0px 0px 1px;
+}
+#services .small-6 {
+    padding: 0px;
+    border: 1px solid #fff;
+    border-width: 0px 1px 1px 0px;
+    background-size: cover;
+}
+.small-6.bw {
+    background: url('../images/waterproof-bg.jpg') no-repeat 0 -40px;
+}
+.small-6.cs {
+    background: url('../images/crawl-bg.jpg') no-repeat 0 0;
+}
+.small-6.fsi {
+    background: url('../images/foundation-bg.jpg') no-repeat 0 0;
+}
+.small-6.tbf {
+    background: url('../images/finishing-bg.jpg') no-repeat 0 0;
+}
+#services .small-6 a {
+    display: block;
+    min-height: 75px;
+    padding: 17px 31px 5px;
+    font-size: 1em;
+    line-height: 1.3em;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+}
+
+/***** Proudly Serving... *****/
+#territory {
+    padding: 10px 0px 8px;
+    background: rgb(50, 100, 170);
+}
+#territory span {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 800;
+    font-style: italic;
+}
+#territory h3 {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .4);
+    font-weight: 200;
+}
+
+/***** CTA Buttons - HOME *****/
+#buttons {
+    padding-bottom: 10px;
+    background: rgb(50, 50, 50);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
+}
+#buttons p {
+    font-size: .9em;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 10px auto 0px;
+}
+#callBtn {
+    font-size: 1.7em;
+}
+#formBtn {
+    font-size: 1.2em;
+}
+#callBtn, #formBtn {
+    color: #fff;
+    overflow: hidden;
+    padding: 10px 10px 0px;
+}
+a#phoneLink, a#formLink {
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    display: block;
+    overflow: auto;
+}
+a#phoneLink {
+    background-color: rgb(0, 130, 70);
+}
+a#formLink {
+    background-color: rgb(215, 45, 35);
+}
+#callBtn .small-9 span {
+    background-color: rgb(0, 150, 90);
+}
+#formBtn .small-9 span {
+    background-color: rgb(235, 65, 55);
+}
+#callBtn .small-9, #formBtn .small-9 {
+    text-align: center;
+    display: table;
+    height: 50px;
+    padding: 0px;
+}
+#callBtn .small-9 span, #formBtn .small-9 span {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+}
+#callBtn .small-3, #formBtn .small-3 {
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, .25)inset;
+    padding: 8px;
+    text-align: center;
+    height: 50px;
+}
+#callBtn .small-3 {
+    background: url('../images/call-icon.svg') no-repeat center;
+    background-size: 30px;
+}
+#formBtn .small-3 {
+    background: url('../images/form-icon.svg') no-repeat center;
+    background-size: 35px;
+}
