@@ -255,7 +255,6 @@ p.contactText {
     font-size: 1em;
     line-height: 1.3em;
     margin-top: 10px;
-    font-weight: bold;
 }
 label small {
     text-transform: capitalize;
@@ -273,6 +272,7 @@ fieldset {
 fieldset legend {
     font-size: 20px;
     margin-bottom: .5rem;
+    background: transparent;
 }
 
 /**** About Us Page Styles ****/
