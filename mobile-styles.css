@@ -266,6 +266,14 @@ label small {
     background-color: rgb(180, 60, 60);
     margin-top: 10px;
 }
+fieldset {
+    border: none;
+    padding: 0px;
+}
+fieldset legend {
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
 
 /**** About Us Page Styles ****/
 img#ownerPhoto {

@@ -1,4 +1,14 @@
-<?php
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css" />
+    <link rel="stylesheet" href="../mobile-styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
+  </head>
+  <?php
 require_once '/home/config/core/mobile/inc/top-border.php';
 /* KEEP TRACK OF MOBILE CONTACT PAGE VS. FULL SITE CONTACT PAGE */
 if(testHasDisplayed(98))
@@ -30,16 +40,6 @@ else
 }
 
 ?>
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css" />
-    <link rel="stylesheet" href="mobile-styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
-  </head>
   <body>
     <!-- NAVIGATION BAR-->
     <div class="off-canvas-wrap" data-offcanvas>
@@ -48,7 +48,7 @@ else
           <div class="right-small">
             <a role="button" href="#" class="right-off-canvas-toggle menu-icon"><span></span></a>
           </div>
-          <div class="left tab-bar-section"><a href="index.html">Larry Janesky's<br>Connecticut Basement Systems</a></div>
+          <div class="left tab-bar-section"><a href="../index.html">Larry Janesky's<br>Connecticut Basement Systems</a></div>
         </nav>
         <!-- NAVIGATION LINKS-->
         <div class="right-off-canvas-menu">
@@ -70,17 +70,13 @@ else
           </ul>
         </div>
         <!-- Contact Form-->
-        <div class="row">
-          <div class="small-12 column">
-            <p class="contactText">Fill out the form below to get started with your FREE Estimate or call us at [phone].</p>
-          </div>
-        </div>
+
 	<div class="row" id="contactForm">
 		<div class="small-12 column">
 				<form class="form-horizontal quoteform" action="<?php echo $contactUrl; ?>" method="post">
 					<fieldset>
 						<legend>Get Your Free Estimate</legend>
-						<p>Simply fill out the form below for a free estimate and our team will contact you to schedule your appointment. Rest assured, you're in good hands with [company].</p>
+						<p class="contactText">Simply fill out the form below for a free estimate and our team will contact you to schedule your appointment. Rest assured, you're in good hands with [company].</p>
 						<div class="control-group">
 							<label class="control-label" for="First_Name">First Name <span>*</span></label>
 							<div class="controls"><input type="text" class="input-xlarge required" id="First_Name" name="First_Name" required aria-required="true"></div>
@@ -115,50 +111,6 @@ else
 								<input type="email" class="input-xlarge required email" id="Email_Address" name="Email_Address" required aria-required="true">
 							</div>
 						</div>
-
-						<?php
-						/* Special Field for Aquaguard Never do this again -JS*/
-						if($siteData['site.id'] == 128) 
-						{	
-							?>
-							<div class="control-group">
-								<label class="control-label" for="Mobile_Custom_Message">How did you hear about us? <span>*</span></label>
-								<div class="controls">
-								<select class="required input-xlarge" name="Mobile_Custom_Message" id="Mobile_Custom_Message">
-								<option value="" selected="selected">Please Select...</option>
-							<option>Internet Search</option>
-							<option>Referral</option>
-							<option>TV: CBS</option>
-							<option>TV: WXIATV-11 ALIVE </option>
-							<option>TV: Other</option>
-							<option>TV: WATL</option>
-							<option>TV: WXIA Antenna (SP) </option>
-							<option>WSB Radio</option>
-							<option>Other Radio Station</option>
-							<option>Letter from Tom D.</option>
-							<option>The Big Deal</option>
-							<option>City Publications Postcard Pack</option>
-							<option>Saving Source</option>
-							<option>All News 106.7 fm</option>
-							<option>Braves/Falcons Game Program</option>
-							<option>Hawks, UGA or Georgia Tech Game Program</option>
-							<option>ALL News Radio Online/Streaming</option>
-							<option>Q100 </option>
-							<option>Kicks Country Radio</option>
-							<option>Kicks Online Country Radio</option>
-							<option>Phone Book</option>
-							<option>Home Show / Fair</option>
-							<option>Newspaper</option>
-							<option>Other</option>
-								</select>
-								</div>
-							</div>
-							<?php
-						}
-						/* End Special Field */
-						?>
-
-
 						<div class="control-group">
 							<label class="control-label" for="Message">Message</label>
 							<div class="controls"><textarea class="input-xlarge" id="Message" name="Message"><?php echo $contactMessage; ?></textarea></div>
