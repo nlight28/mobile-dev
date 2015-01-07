@@ -175,7 +175,7 @@ a#formLink {
 
 /**** CTA Buttons -Interior page override ****/
 #topBtns {
-    padding: 10px 5px;
+    padding: 5px 5px 2px;
     background: rgb(50, 50, 65);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
 }
@@ -186,7 +186,7 @@ a#formLink {
     background-size: 26px;
 }
 #topBtns #callBtn, #topBtns #formBtn {
-    font-size: .8em;
+    font-size: 1em;
     padding: 0px 3px
 }
 #topBtns .small-9 {
