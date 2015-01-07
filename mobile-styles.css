@@ -161,11 +161,11 @@ a#formLink {
     height: 50px;
 }
 #callBtn .small-3 {
-    background: url('../images/call-icon.svg') no-repeat center;
+    background: url('images/call-icon.svg') no-repeat center;
     background-size: 30px;
 }
 #formBtn .small-3 {
-    background: url('../images/form-icon.svg') no-repeat center;
+    background: url('images/form-icon.svg') no-repeat center;
     background-size: 35px;
 }
 
