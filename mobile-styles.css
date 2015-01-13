@@ -133,6 +133,7 @@ ul.off-canvas-list li label {
 }
 #buttons.btnHome {
     background: transparent;
+    padding: 5px 0px 20px;
 }
 #buttons p {
     font-size: 16px;
