@@ -60,19 +60,20 @@ ul.off-canvas-list li label {
 }
 #services .row {
     background-color: rgb(45, 85, 165);
-    border-bottom: 3px solid rgba(0, 35, 95, .9);
-    margin-bottom: 3px;
+    /*border-bottom: 3px solid rgba(0, 35, 95, .9);*/
+    margin-bottom: 5px;
 }
 #services .small-11 a {
     display: block;
-    min-height: 50px;
-    padding: 17px 8px;
-    font-size: 1.1em;
+    min-height: 40px;
+    padding: 12px 8px;
+    font-size: 1.0em;
     line-height: 1em;
     font-weight: 300;
     text-align: center;
     color: #fff;
     text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+    letter-spacing: .05em;
 }
 #services .small-11 .small-10 {
     text-align: left;
@@ -90,7 +91,7 @@ ul.off-canvas-list li label {
     margin: 0px auto;
     text-align: center;
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: 12px;
     font-weight: 800;
     font-style: italic;
     color: rgb(25, 65, 125);
@@ -98,7 +99,7 @@ ul.off-canvas-list li label {
 #territory h3 {
     text-align: center;
     line-height: 1.3em;
-    font-size: 1.1em;
+    font-size: 15px;
     color: #4c4c4c;
     text-shadow: 0px 1px 0px rgba(255,255,255, .75);
     font-weight: 300;
@@ -113,15 +114,16 @@ ul.off-canvas-list li label {
 #buttons p {
     font-size: .9em;
     font-style: italic;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #fff;
     text-align: center;
     margin: 10px auto 0px;
 }
 #callBtn, #formBtn {
-    font-size: 1.0em;
+    font-size: 1.3em;
     margin-top: 8px;
     margin-bottom: 10px;
+    letter-spacing: .05em;
 }
 #callBtn, #formBtn {
     color: #fff;
@@ -141,19 +143,19 @@ a#phoneLink {
 a#formLink {
     background-color: rgb(0, 130, 70);
 }
-#callBtn .small-9 span {
+#callBtn .small-9 span, #callBtn .small-12 span {
     background-color: rgb(235, 65, 55);
 }
 #formBtn .small-9 span {
     background-color: rgb(0, 150, 90);
 }
-#callBtn .small-9, #formBtn .small-9 {
+#callBtn .small-9, #callBtn .small-12, #formBtn .small-9 {
     text-align: center;
     display: table;
     height: 50px;
     padding: 0px;
 }
-#callBtn .small-9 span, #formBtn .small-9 span {
+#callBtn .small-9 span, #callBtn .small-12 span, #formBtn .small-9 span {
     display: table-cell;
     vertical-align: middle;
     font-weight: 300;
