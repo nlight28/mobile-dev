@@ -1,10 +1,18 @@
 body {
-    background-image: url('images/basement-bg.jpg'), rgba(255,255,255,.4);
-    background-size: cover;
-    background-position: center;
+background-image: -webkit-linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
+background-image: -o-linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
+background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
+
 /***** Top Nav Bar *****/
+.contain-to-grid {
+    background: transparent;
+}
 .tab-bar {
     background: rgb(50, 95, 170);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
@@ -63,13 +71,14 @@ ul.off-canvas-list li label {
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 1.3em;
+    text-shadow: 0px 0px 10px rgb(255,255,255);
 }
 
 /***** Service Thumbnails *****/
 #services {
     padding-bottom: 15px;
-    background: #e7e7e7;
-    border-bottom: 1px solid #c8c8c8;
+    background: #efefef;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
 #services .row {
     background-color: rgb(45, 85, 165);
@@ -96,8 +105,8 @@ ul.off-canvas-list li label {
 /***** Proudly Serving... *****/
 #territory {
     padding: 10px 0px 8px;
-    background: #e7e7e7;
-    border-top: 1px solid #c8c8c8;
+    background: #efefef;
+    border-top: 1px solid rgba(255,255,255,.7);
 }
 #territory span {
     display: block;
@@ -121,15 +130,16 @@ ul.off-canvas-list li label {
 /***** CTA Buttons - HOME *****/
 #buttons {
     padding-bottom: 10px;
-    background: #fff;
+    background: transparent;
 
 }
 #buttons p {
-    font-size: .9em;
+    font-size: 15px;
     font-style: italic;
     color: #333;
     text-align: center;
     margin: 10px auto 0px;
+    text-shadow: 0px 0px 10px rgb(255,255,255);
 }
 #ctaBtn {
     font-size: 1.3em;
@@ -204,7 +214,7 @@ a#ctaLink {
 
 /**** Contact Form ****/
 div#contactForm {
-    background: #e7e7e7;
+    background: #efefef;
     padding-top: 15px;
     border-top: 1px solid #c8c8c8;
 }
