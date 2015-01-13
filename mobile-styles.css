@@ -1,4 +1,4 @@
-body {
+body.home {
 background-image: -webkit-linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
 background-image: -o-linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
 background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
@@ -130,6 +130,10 @@ ul.off-canvas-list li label {
 /***** CTA Buttons - HOME *****/
 #buttons {
     padding-bottom: 10px;
+    background: #fff;
+
+}
+#buttons.btnHome {
     background: transparent;
 
 }
