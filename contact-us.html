@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/vendor/modernizr.js"></script>
+  </head>
+    <body>
+  <?php
+require_once '/home/config/core/mobile/inc/top-border.php';
+/* KEEP TRACK OF MOBILE CONTACT PAGE VS. FULL SITE CONTACT PAGE */
+if(testHasDisplayed(98))
+{
+	if(testGetVariation(98) == 209)
+	{
+		testSetVariation(99, 212);
+	}
+	elseif(testGetVariation(98) == 208)
+	{
+		testSetVariation(99, 210);
+	}
+	displaytest(99);
+}
+/* END KEEP TRACK OF MOBILE CONTACT PAGE VS. FULL SITE CONTACT PAGE */
+
+$cmsSiteData = &$siteData;
+require_once '/home/config/cms/classes/nav.class.php';
+$nav = new nav();
+$contactUrl = $nav->getModulePageUrl(5, 0, true, array('root' => true));
+
+if($contactUrl)
+{
+	$contactUrl .= '/confirmation.html?mobile_override=1';
+}
+else
+{
+	$contactUrl = '/core/mobile/contact-us/confirmation.html';
+}
+
+?>
+
+    <!-- NAVIGATION BAR-->
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar">
+          <div class="right-small">
+            <a role="button" href="#" class="right-off-canvas-toggle menu-icon"><span></span></a>
+          </div>
+          <div class="left tab-bar-section"><a href="index.html">Larry Janesky's<br>Connecticut Basement Systems</a></div>
+        </nav>
+        <!-- NAVIGATION LINKS-->
+        <div class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Our Services</label></li>
+            <li><a href="basement-waterproofing.html">Basement Waterproofing</a></li>
+            <li><a href="crawl-space-repair.html">Crawl Space Repair</a></li>
+            <li><a href="sump-pumps.html">Sump Pumps</a></li>
+            <li><a href="concrete-lifting.html">Concrete Lifting</a></li>
+            <li><a href="foundation-repair.html">Foundation Repair</a></li>
+            <li><a href="basement-finishing.html">Basement Finishing</a></li>
+            <li><label>About Us</label></li>
+            <li><a href="about-us.html">Company Profile</a></li>
+            <li><a href="contact-us.html">Request a Free Quote</a></li>
+            <li><a href="#">Call Now: [phone]</a></li>
+          </ul>
+        </div>
+        <!-- Contact Form-->
+
+	<div class="row" id="contactForm">
+		<div class="small-12 column">
+				<form class="form-horizontal quoteform" action="<?php echo $contactUrl; ?>" method="post">
+					<fieldset>
+						<legend>Get Your Free Estimate</legend>
+						<p class="contactText">Simply fill out the form below for a free estimate and our team will contact you to schedule your appointment. Rest assured, you're in good hands with [company].</p>
+						<div class="control-group">
+							<label class="control-label" for="First_Name">First Name <span>*</span></label>
+							<div class="controls"><input type="text" class="input-xlarge required" id="First_Name" name="First_Name" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="Last_Name">Last Name <span>*</span></label>
+							<div class="controls"><input type="text" class="input-xlarge required" id="Last_Name" name="Last_Name" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="Street">Street <span>*</span></label>
+							<div class="controls"><input type="text" class="input-xlarge required" id="Street" name="Street" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="City">City <span>*</span></label>
+							<div class="controls"><input type="text" value="<?php echo $zipCity; ?>" class="input-xlarge required" id="City" name="City" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="State">State <span>*</span></label>
+							<div class="controls"><input type="text" value="<?php echo $zipState; ?>" class="input-xlarge required" id="State" name="State" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="Zip_Code">[zip_language] <span>*</span></label>
+							<div class="controls"><input type="text" value="<?php echo $zipZip; ?>" class="input-xlarge required" id="Zip_Code" name="Zip_Code" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="Phone">Phone <span>*</span></label>
+							<div class="controls"><input type="tel" class="input-xlarge required" id="Phone" name="Phone" required aria-required="true"></div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="Email_Address">Email <span>*</span></label>
+							<div class="controls">
+								<input type="email" class="input-xlarge required email" id="Email_Address" name="Email_Address" required aria-required="true">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="Message">Message</label>
+							<div class="controls"><textarea class="input-xlarge" id="Message" name="Message"><?php echo $contactMessage; ?></textarea></div>
+						</div>
+					</fieldset>
+					
+					<div class="form-actions">
+						<button type="submit" class="btn btn-large [contact_button_class]">Submit Quote</button>
+					</div>
+					
+					<input type="hidden" name="save" value="save" />
+					<input type="hidden" name="send" value="Send" />
+				</form>
+		</div>
+	</div>
+<?php require_once '/home/config/core/mobile/inc/bottom-border.php'; ?>
+</body>
+</html>
