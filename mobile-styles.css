@@ -1,0 +1,271 @@
+/***** Top Nav Bar *****/
+.tab-bar {
+    background: rgb(50, 95, 170);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
+}
+.tab-bar-section.left {
+    text-align: left;
+}
+.tab-bar-section a {
+    background: url('images/bs-icon.png') no-repeat 0px 8px transparent;
+    background-size: 28px;
+    padding: 7px 0px 0px 40px;
+    display: block;
+    color: #fff;
+}
+.tab-bar-section {
+    font-size: .8em;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+.right-small {
+    border-left: solid 1px rgb(0, 60, 120);
+}
+
+/***** Nav Canvas *****/
+.right-off-canvas-menu {
+    background: rgb(220, 220, 220);
+}
+ul.off-canvas-list li a {
+    color: rgb(60,60,60);
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
+ul.off-canvas-list li a:hover {
+    color: #fff;
+    background: rgb(50, 100, 170);
+}
+ul.off-canvas-list li label {
+    background: rgb(50, 95, 170);
+    color: #fff;
+    border-top: solid 1px rgb(120, 120, 120);
+    text-shadow: 0px 1px 0px rgba(0,0,0,.3);
+}
+.move-left .exit-off-canvas {
+    box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
+}
+
+/***** Main Message Image *****/
+#header div {
+    padding: 20px;
+}
+#header img {
+    display: block;
+    margin: 0px auto;
+}
+
+/***** Service Thumbnails *****/
+#services {
+    padding-bottom: 15px;
+}
+#services .row {
+    background-color: rgb(45, 85, 165);
+    border-bottom: 3px solid rgba(0, 35, 95, .9);
+    margin-bottom: 3px;
+}
+#services .small-11 a {
+    display: block;
+    min-height: 50px;
+    padding: 17px 8px;
+    font-size: 1.1em;
+    line-height: 1em;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+}
+#services .small-11 .small-10 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/***** Proudly Serving... *****/
+#territory {
+    padding: 10px 0px 8px;
+    background: #efefef;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+#territory span {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(25, 65, 125);
+}
+#territory h3 {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.1em;
+    color: #4c4c4c;
+    text-shadow: 0px 1px 0px rgba(255,255,255, .75);
+    font-weight: 300;
+}
+
+/***** CTA Buttons - HOME *****/
+#buttons {
+    padding-bottom: 10px;
+    background: rgb(50, 50, 65);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
+}
+#buttons p {
+    font-size: .9em;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 10px auto 0px;
+}
+#callBtn, #formBtn {
+    font-size: 1.0em;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#callBtn, #formBtn {
+    color: #fff;
+    overflow: hidden;
+}
+a#phoneLink, a#formLink {
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    display: block;
+    overflow: auto;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+}
+a#phoneLink {
+    background-color: rgb(215, 45, 35);   
+}
+a#formLink {
+    background-color: rgb(0, 130, 70);
+}
+#callBtn .small-9 span {
+    background-color: rgb(235, 65, 55);
+}
+#formBtn .small-9 span {
+    background-color: rgb(0, 150, 90);
+}
+#callBtn .small-9, #formBtn .small-9 {
+    text-align: center;
+    display: table;
+    height: 50px;
+    padding: 0px;
+}
+#callBtn .small-9 span, #formBtn .small-9 span {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+}
+#callBtn .small-3, #formBtn .small-3 {
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, .25)inset;
+    padding: 8px;
+    text-align: center;
+    height: 50px;
+}
+#callBtn .small-3 {
+    background: url('images/call-icon.svg') no-repeat center;
+    background-size: 30px;
+}
+#formBtn .small-3 {
+    background: url('images/form-icon.svg') no-repeat center;
+    background-size: 35px;
+}
+
+/**** CTA Buttons -Interior page override ****/
+#topBtns {
+    padding: 5px 5px 2px;
+    background: rgb(50, 50, 65);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4)inset;
+}
+#topBtns #callBtn .small-3 {
+    background-size: 24px;
+}
+#topBtns #formBtn .small-3 {
+    background-size: 26px;
+}
+#topBtns #callBtn, #topBtns #formBtn {
+    font-size: 1em;
+    padding: 0px 3px
+}
+#topBtns .small-9 {
+    display: table;
+    height: 40px;
+    padding: 0px;
+}
+#topBtns .small-3 {
+    height: 40px;
+}
+
+/**** Content Styles ****/
+#contentWrap h1 {
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+div#contentWrap {
+    padding-top: 10px;
+}
+#contentWrap p, #contentWrap ul {
+    line-height: 1.4em;
+    font-weight: 300;
+}
+#contentWrap h2 {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+#contentWrap h3 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+/**** Photo Slideshow ****/
+.visible-img {
+    height: 85%;
+}
+.clearing-caption {
+    padding-bottom: 30px;
+}
+/**** Orbit Container ****/
+.orbit-container {
+    margin: 10px auto 20px;
+}
+
+/**** Contact Form ****/
+div#contactForm {
+    background: #eee;
+    padding-top: 10px;
+}
+p.contactText {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-top: 10px;
+}
+label small {
+    text-transform: capitalize;
+    color: rgb(180, 60, 60);
+    float: right;
+}
+#contactForm button {
+    background-color: rgb(180, 60, 60);
+    margin-top: 10px;
+}
+fieldset {
+    border: none;
+    padding: 0px;
+}
+fieldset legend {
+    font-size: 20px;
+    margin-bottom: .5rem;
+    background: transparent;
+}
+
+/**** About Us Page Styles ****/
+img#ownerPhoto {
+    float: right;
+    margin: 0px 0px 15px 15px;
+    max-width: 100px;
+}
