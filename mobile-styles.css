@@ -1,13 +1,12 @@
 body.home {
-background-image: -webkit-linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
-background-image: -o-linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
-background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('images/basement-bg.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('images/basement-bg.jpg');
+    background-image: -o-linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('images/basement-bg.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('images/basement-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
 
 /***** Top Nav Bar *****/
 .contain-to-grid {
@@ -41,7 +40,7 @@ background-attachment: fixed;
     background: rgb(220, 220, 220);
 }
 ul.off-canvas-list li a {
-    color: rgb(60,60,60);
+    color: rgb(60, 60, 60);
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     border-top: 1px solid rgba(255, 255, 255, .3);
 }
@@ -53,7 +52,7 @@ ul.off-canvas-list li label {
     background: rgb(50, 95, 170);
     color: #fff;
     border-top: solid 1px rgb(120, 120, 120);
-    text-shadow: 0px 1px 0px rgba(0,0,0,.3);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, .3);
 }
 .move-left .exit-off-canvas {
     box-shadow: 4px 0 10px rgba(0, 0, 0, .2);
@@ -71,18 +70,19 @@ ul.off-canvas-list li label {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.2em;
-    text-shadow: 0px 0px 10px rgb(255,255,255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 /***** Service Thumbnails *****/
 #services {
     padding-bottom: 15px;
     background: #efefef;
-    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 #services .row {
     background-color: rgb(45, 85, 165);
-    /*border-bottom: 3px solid rgba(0, 35, 95, .9);*/
+    /* border-bottom: 3px solid rgba(0, 35, 95, .9);
+    */
     margin-bottom: 5px;
 }
 #services .small-11 a {
@@ -94,8 +94,7 @@ ul.off-canvas-list li label {
     font-weight: 400;
     text-align: center;
     color: #fff;
-    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
-
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
 }
 #services .small-11 .small-10 {
     text-align: left;
@@ -106,7 +105,7 @@ ul.off-canvas-list li label {
 #territory {
     padding: 10px 0px 8px;
     background: #efefef;
-    border-top: 1px solid rgba(255,255,255,.7);
+    border-top: 1px solid rgba(255, 255, 255, .7);
 }
 #territory span {
     display: block;
@@ -123,7 +122,7 @@ ul.off-canvas-list li label {
     line-height: 1.3em;
     font-size: 15px;
     color: #333;
-    text-shadow: 0px 1px 0px rgba(255,255,255, .75);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, .75);
     font-weight: 400;
 }
 
@@ -131,11 +130,9 @@ ul.off-canvas-list li label {
 #buttons {
     padding-bottom: 10px;
     background: #fff;
-
 }
 #buttons.btnHome {
     background: transparent;
-
 }
 #buttons p {
     font-size: 16px;
@@ -143,7 +140,7 @@ ul.off-canvas-list li label {
     color: #333;
     text-align: center;
     margin: 10px auto 0px;
-    text-shadow: 0px 0px 10px rgb(255,255,255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 #ctaBtn {
     font-size: 1.3em;
@@ -159,12 +156,11 @@ a#ctaLink {
     color: #fff;
     display: block;
     overflow: auto;
-    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
 }
 a#ctaLink {
-    background-color: rgb(215, 45, 35);   
+    background-color: rgb(215, 45, 35);
 }
-
 #ctaBtn .small-12 {
     text-align: center;
     display: table;
@@ -176,7 +172,6 @@ a#ctaLink {
     vertical-align: middle;
     font-weight: 400;
 }
-
 
 /**** Content Styles ****/
 #contentWrap {
@@ -204,6 +199,45 @@ a#ctaLink {
     font-weight: 400;
 }
 
+/**** Footer ****/
+#footer {
+    background-color: #4c4c4c;
+    padding: 15px 0px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, .25) inset;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
+}
+#footer > div:nth-child(2) {
+    border-left: 1px solid #5a5a5a;
+}
+#footer h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 3px;
+    font-weight: 800;
+}
+#footer p {
+    font-size: 12px;
+    line-height: 1.3em;
+    margin-bottom: 0px;
+    color: #888;
+}
+#footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.3em;
+    font-size: 12px;
+}
+#footer li {
+    margin-bottom: 5px;
+}
+#footer li a {
+    color: #888;
+    text-decoration: none;
+}
+
+
 /**** Photo Slideshow ****/
 .visible-img {
     height: 85%;
@@ -211,6 +245,7 @@ a#ctaLink {
 .clearing-caption {
     padding-bottom: 30px;
 }
+
 /**** Orbit Container ****/
 .orbit-container {
     margin: 10px auto 20px;
@@ -241,7 +276,7 @@ label small {
 #contactForm button {
     background-color: rgb(215, 45, 35);
     margin-top: 10px;
-    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, .5);
     font-size: 1.3em;
 }
 fieldset {
