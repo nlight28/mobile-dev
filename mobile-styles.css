@@ -1,3 +1,9 @@
+body {
+    background-image: url('images/basement-bg.jpg'), rgba(255,255,255,.4);
+    background-size: cover;
+    background-position: center;
+}
+
 /***** Top Nav Bar *****/
 .tab-bar {
     background: rgb(50, 95, 170);
@@ -79,7 +85,7 @@ ul.off-canvas-list li label {
     font-weight: 400;
     text-align: center;
     color: #fff;
-    text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
 
 }
 #services .small-11 .small-10 {
@@ -137,11 +143,9 @@ ul.off-canvas-list li label {
 }
 a#ctaLink {
     color: #fff;
-    border-top: 1px solid rgba(255, 255, 255, .6);
-    border-bottom: 1px solid rgba(0, 0, 0, .3);
     display: block;
     overflow: auto;
-    text-shadow: 0px -1px 0px rgba(0,0,0,.8);
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
 }
 a#ctaLink {
     background-color: rgb(215, 45, 35);   
@@ -201,22 +205,19 @@ a#ctaLink {
 /**** Contact Form ****/
 div#contactForm {
     background: #e7e7e7;
-    padding-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #c8c8c8;
 }
 p.contactText {
     font-size: 15px;
     line-height: 1.3em;
     margin-top: 10px;
 }
-p.contactText.call {
-    border-bottom: 1px solid #c8c8c8;
-    padding-bottom: 17px;
-}
 p.contactText span {
     display: block;
     margin-top: 3px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 label small {
     text-transform: capitalize;
@@ -224,8 +225,10 @@ label small {
     float: right;
 }
 #contactForm button {
-    background-color: rgb(180, 60, 60);
+    background-color: rgb(215, 45, 35);
     margin-top: 10px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    font-size: 1.3em;
 }
 fieldset {
     border: none;
