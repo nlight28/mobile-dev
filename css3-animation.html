@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+        <style>
+		div {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: coral;
+			outline: 1px solid transparent;
+			-webkit-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate,
+							   	move 4s 1s infinite cubic-bezier(0.760, 0.025, 0.475, 0.610) alternate;
+			-moz-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate,
+							   	move 4s 1s infinite cubic-bezier(0.760, 0.025, 0.475, 0.610) alternate;
+			-ms-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate,
+								move 4s 1s infinite cubic-bezier(0.760, 0.025, 0.475, 0.610) alternate;
+			-o-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate,
+								move 4s 1s infinite cubic-bezier(0.760, 0.025, 0.475, 0.610) alternate;
+			animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate,
+								move 4s 1s infinite cubic-bezier(0.760, 0.025, 0.475, 0.610) alternate;
+			margin: 10% ;
+		}
+
+		@-webkit-keyframes square-to-circle {
+			0% {
+				border-radius: 50% 50% 50% 50%;
+				background: coral;
+				transform:rotate(0deg);
+			}
+			15% {
+				border-radius: 20% 50% 50% 50%;
+			}
+			25% {
+				border-radius: 5% 50% 50% 50%;
+				background: darksalmon;
+				transform:rotate(60deg);
+			}
+			50% {
+				border-radius: 50% 5% 50% 50%;
+				background: indianred;
+				transform:rotate(110deg);
+			}
+			67% {
+				border-radius: 50% 50% 20% 50%;
+			}
+			75% {
+				border-radius: 50% 50% 5% 50%;
+				background: lightcoral;
+				transform:rotate(165deg);
+			}
+			100% {
+				border-radius: 50% 50% 50% 5%;
+				background: darksalmon;
+				transform:rotate(80deg);
+			}
+		}
+
+		@-moz-keyframes square-to-circle {
+			0% {
+				border-radius: 50% 50% 50% 50%;
+				background: coral;
+				transform:rotate(0deg);
+			}
+			15% {
+				border-radius: 20% 50% 50% 50%;
+			}
+			25% {
+				border-radius: 5% 50% 50% 50%;
+				background: darksalmon;
+				transform:rotate(60deg);
+			}
+			50% {
+				border-radius: 50% 5% 50% 50%;
+				background: indianred;
+				transform:rotate(110deg);
+			}
+			67% {
+				border-radius: 50% 50% 20% 50%;
+			}
+			75% {
+				border-radius: 50% 50% 5% 50%;
+				background: lightcoral;
+				transform:rotate(165deg);
+			}
+			100% {
+				border-radius: 50% 50% 50% 5%;
+				background: darksalmon;
+				transform:rotate(80deg);
+			}
+		}
+
+		@-ms-keyframes square-to-circle {
+			0% {
+				border-radius: 50% 50% 50% 50%;
+				background: coral;
+				transform:rotate(0deg);
+			}
+			15% {
+				border-radius: 20% 50% 50% 50%;
+			}
+			25% {
+				border-radius: 5% 50% 50% 50%;
+				background: darksalmon;
+				transform:rotate(60deg);
+			}
+			50% {
+				border-radius: 50% 5% 50% 50%;
+				background: indianred;
+				transform:rotate(110deg);
+			}
+			67% {
+				border-radius: 50% 50% 20% 50%;
+			}
+			75% {
+				border-radius: 50% 50% 5% 50%;
+				background: lightcoral;
+				transform:rotate(165deg);
+			}
+			100% {
+				border-radius: 50% 50% 50% 5%;
+				background: darksalmon;
+				transform:rotate(80deg);
+			}
+		}
+
+		@-o-keyframes square-to-circle {
+			0% {
+				border-radius: 50% 50% 50% 50%;
+				background: coral;
+				transform:rotate(0deg);
+			}
+			15% {
+				border-radius: 20% 50% 50% 50%;
+			}
+			25% {
+				border-radius: 5% 50% 50% 50%;
+				background: darksalmon;
+				transform:rotate(60deg);
+			}
+			50% {
+				border-radius: 50% 5% 50% 50%;
+				background: indianred;
+				transform:rotate(110deg);
+			}
+			67% {
+				border-radius: 50% 50% 20% 50%;
+			}
+			75% {
+				border-radius: 50% 50% 5% 50%;
+				background: lightcoral;
+				transform:rotate(165deg);
+			}
+			100% {
+				border-radius: 50% 50% 50% 5%;
+				background: darksalmon;
+				transform:rotate(80deg);
+			}
+		}
+
+		@keyframes square-to-circle {
+			0% {
+				border-radius: 50% 50% 50% 50%;
+				background: coral;
+				transform:rotate(0deg);
+			}
+			15% {
+				border-radius: 20% 50% 50% 50%;
+			}
+			25% {
+				border-radius: 5% 50% 50% 50%;
+				background: darksalmon;
+				transform:rotate(60deg);
+			}
+			50% {
+				border-radius: 50% 5% 50% 50%;
+				background: indianred;
+				transform:rotate(110deg);
+			}
+			67% {
+				border-radius: 50% 50% 20% 50%;
+			}
+			75% {
+				border-radius: 50% 50% 5% 50%;
+				background: lightcoral;
+				transform:rotate(165deg);
+			}
+			100% {
+				border-radius: 50% 50% 50% 5%;
+				background: darksalmon;
+				transform:rotate(80deg);
+			}
+		}
+
+		@-webkit-keyframes move {
+
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 1000px;
+		}
+		}
+		@-moz-keyframes move {
+
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 1000px;
+		}
+		}
+		@-ms-keyframes move {
+
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 1000px;
+		}
+		}
+		@-o-keyframes move {
+
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 1000px;
+		}
+		}
+		@keyframes move {
+
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 1000px;
+		}
+		}
+
+        </style>
+    </head>
+    <body>
+
+
+	<div></div>
+
+
+
+    </body>
+</html>
